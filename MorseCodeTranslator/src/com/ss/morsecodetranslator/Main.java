@@ -19,14 +19,14 @@ public class Main {
                 case 1:
                     System.out.print("Enter morse code:");
                     s = get.next();
+                    morsetotext.check(s);
                     break;
                 case 2:
                     System.out.print("Enter txt:");
                     s = get.next();
+                    texttomorse.check(s);
                     break;
             }
-
-
         }
         get.close();
     }
