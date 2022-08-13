@@ -1,23 +1,37 @@
 package com.ss.morsecodetranslator;
 
 public class texttomorse {
-    String in;
+
+    // Not complete
+    static void translate(char chr) {
+        if (chr == 'A' || chr == 'a') {
+            System.out.print("*- ");
+        }
+        if (chr == 'B' || chr == 'b') {
+            System.out.print("-*** ");
+        }
+        if (chr == 'C' || chr == 'c') {
+            System.out.print("-*-* ");
+        }
+        if (chr == 'D' || chr == 'd') {
+            System.out.print("-** ");
+        }
+    }
 
     public static void check(String in) {
-        String stg;
+        char ch;
         if (in != null) {
-            stg = String.valueOf(in.charAt(0));
+            ch = in.charAt(0);
+            //check with translate
+            translate(ch);
             for (int i = 1; i < in.length(); i++) {
                 if (in.charAt(i) == '/') {
-                    // check with morsecode
-                    System.out.println(stg);
-                    stg = String.valueOf(in.charAt(i + 1));
-                    i += 1;
+                    System.out.println("  ");
                 } else {
-                    stg = stg + in.charAt(i);
+                    // check with translate
+                    translate(in.charAt(i));
                 }
             }
-            System.out.println(stg);
         }
     }
 }

@@ -1,7 +1,16 @@
 package com.ss.morsecodetranslator;
 
 public class morsetotext {
-    String in;
+
+    // translate not working!
+    static void translate(String str) {
+        if (str == "*-") {
+            System.out.print("A");
+        }
+        if (str == "-***") {
+            System.out.print("B");
+        }
+    }
 
     public static void check(String in) {
         String stg;
@@ -10,6 +19,7 @@ public class morsetotext {
             for (int i = 1; i < in.length(); i++) {
                 if (in.charAt(i) == '/') {
                     // check with morsecode
+                    translate(stg);
                     System.out.println(stg);
                     stg = String.valueOf(in.charAt(i + 1));
                     i += 1;
@@ -17,6 +27,7 @@ public class morsetotext {
                     stg = stg + in.charAt(i);
                 }
             }
+            translate(stg);
             System.out.println(stg);
         }
     }
