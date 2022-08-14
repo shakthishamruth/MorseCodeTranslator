@@ -2,7 +2,6 @@ package com.ss.morsecodetranslator;
 
 public class texttomorse {
 
-    // Not complete
     static void translate(char chr) {
         if (chr == 'A' || chr == 'a') {
             System.out.print("*- ");
@@ -16,6 +15,14 @@ public class texttomorse {
         if (chr == 'D' || chr == 'd') {
             System.out.print("-** ");
         }
+        if (chr == 'E' || chr == 'e') {
+            System.out.print("* ");
+        }
+        /*
+        if (chr == ' ' || chr == ' ') {
+            System.out.print(" ");
+        }
+         */
     }
 
     public static void check(String in) {
@@ -26,7 +33,7 @@ public class texttomorse {
             translate(ch);
             for (int i = 1; i < in.length(); i++) {
                 if (in.charAt(i) == '/') {
-                    System.out.println("  ");
+                    System.out.print("  ");
                 } else {
                     // check with translate
                     translate(in.charAt(i));
