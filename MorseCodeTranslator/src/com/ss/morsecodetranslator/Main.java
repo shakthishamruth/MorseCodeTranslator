@@ -9,7 +9,7 @@ public class Main {
         String s;
         boolean running = true;
         while (running) {
-            System.out.print("\n\n0.Exit\n1.Morsetotxt\n2.Txttomorse\nchoice:");
+            System.out.print("\n\n0.Exit\n1.Morse to txt\n2.Txt to morse\nchoice:");
             c = get.nextInt();
             switch (c) {
                 case 0:
