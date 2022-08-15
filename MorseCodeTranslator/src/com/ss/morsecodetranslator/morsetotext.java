@@ -8,9 +8,81 @@ public class morsetotext {
         if (str.equals("-***")) {
             System.out.print("B");
         }
+        if (str.equals("-*-*")) {
+            System.out.print("C");
+        }
+        if (str.equals("-**")) {
+            System.out.print("D");
+        }
+        if (str.equals("*")) {
+            System.out.print("E");
+        }
+        if (str.equals("**-*")) {
+            System.out.print("F");
+        }
+        if (str.equals("--*")) {
+            System.out.print("G");
+        }
+        if (str.equals("****")) {
+            System.out.print("H");
+        }
+        if (str.equals("**")) {
+            System.out.print("I");
+        }
+        if (str.equals("*---")) {
+            System.out.print("J");
+        }
+        if (str.equals("-*-")) {
+            System.out.print("K");
+        }
+        if (str.equals("*-**")) {
+            System.out.print("L");
+        }
+        if (str.equals("--")) {
+            System.out.print("M");
+        }
+        if (str.equals("-*")) {
+            System.out.print("N");
+        }
+        if (str.equals("---")) {
+            System.out.print("O");
+        }
+        if (str.equals("*--*")) {
+            System.out.print("P");
+        }
+        if (str.equals("--*-")) {
+            System.out.print("Q");
+        }
+        if (str.equals("*-*")) {
+            System.out.print("R");
+        }
+        if (str.equals("***")) {
+            System.out.print("S");
+        }
+        if (str.equals("-")) {
+            System.out.print("T");
+        }
+        if (str.equals("**-")) {
+            System.out.print("U");
+        }
+        if (str.equals("***-")) {
+            System.out.print("V");
+        }
+        if (str.equals("*--")) {
+            System.out.print("W");
+        }
+        if (str.equals("-**-")) {
+            System.out.print("X");
+        }
+        if (str.equals("-*--")) {
+            System.out.print("Y");
+        }
+        if (str.equals("--**")) {
+            System.out.print("Z");
+        }
         /*
-        if (str.equals(" ")) {
-            System.out.print(" ");
+        if (str.equals("")) {
+            System.out.print("");
         }
          */
     }
