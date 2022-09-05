@@ -17,9 +17,10 @@ public class Main {
                     System.out.println("Exit!");
                     break;
                 case 1:
-                    System.out.print("Enter morse code:");
-                    s = get.next();
-                    morsetotext.check(s);
+                    //System.out.print("Enter morse code:");
+                    //s = get.next();
+                    //morsetotext.check(s);
+                    System.out.println("Code not Complete!");
                     break;
                 case 2:
                     System.out.print("Enter txt:");
