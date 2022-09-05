@@ -1,6 +1,7 @@
 package com.ss.morsecodetranslator;
 
 public class morsetotext {
+    // Notcomplete
     static void translate(String str) {
         if (str.equals("*-")) {
             System.out.print("A");
